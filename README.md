@@ -11,13 +11,20 @@ Task Manager App is designed to help you efficiently manage your tasks and to-do
 - Prioritize tasks with different levels
 - Sync across multiple devices
 
-## Installation
 ### Prerequisites
 - Javascript
 - Express.js
 - Node.js
 - npm (Node Package Manager)
 - mongoDB (for database)
+
+## Installation
+ ## To setup the projest locally 
+- First you should have to start your backend server
+- for doing that you should have to run a build command on your terminal -> node server.js
+- after that you have to install all the dependencies for your Frontend
+- for do so run a Command on terminal -> npm install
+- to run the frontend server on local host -> npm run dev
 
 ## For User 
 - user can create an account with security by hashing their password
