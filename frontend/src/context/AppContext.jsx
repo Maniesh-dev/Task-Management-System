@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 const AppContext = createContext()
 
 const AppContextProvider = ({children}) => {
-  const backendURL = import.meta.env.VITE_BACKEND_URL
+  const backendURL = "https://task-manage-backend-nqna.onrender.com"
   const [token, setToken] = useState(localStorage.getItem('token') ? localStorage.getItem('token'): false)
   const [atoken, setAToken] = useState(localStorage.getItem('atoken') ? localStorage.getItem('atoken'): false)
   const [userData, setUserData] = useState(false)
