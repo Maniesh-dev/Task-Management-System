@@ -9,7 +9,6 @@ import AdminDashboard from './Admin/AdminDashboard'
 
 const Home = () => {
   const {atoken} = useContext(AppContext)
-  console.log(atoken)
   return (
     <div className='flex flex-col items-center justify-center min-h-screen bg-[url("/bg_img.png")] bg-cover bg-center'>
       <Navbar />

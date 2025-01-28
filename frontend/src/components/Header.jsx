@@ -14,7 +14,6 @@ const Header = () => {
     } else {
       navigate('/login')
       toast.error('Please login to continue')
-      
     }
   }
 

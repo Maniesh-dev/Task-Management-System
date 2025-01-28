@@ -43,9 +43,12 @@ const AppContextProvider = ({children}) => {
   }
 
   useEffect(() => {
-    getUserData()
-    getTaskData()
-    getAdminData()
+    if(token){
+      getUserData()
+      getTaskData()
+    } else if(atoken){
+      getAdminData()
+    }
   }, [token, atoken])
   
 
