@@ -20,10 +20,10 @@ const AdminDashboard = () => {
       </div>
         
       <div className=' w-full max-h-[70vh] min-h-[60vh] overflow-y-scroll'>
-      <div className='hidden sm:grid grid-cols-[0.5fr_1fr_1fr_1fr_1fr] grid-flow-col py-3 px-20 text-gray-600 border-b'>
+      <div className='hidden md:grid grid-cols-[0.5fr_1fr_1fr_1fr_1fr] grid-flow-col py-3 md:px-20 text-gray-600 border-b text-center'>
         <p>#</p>
-        <p>Name</p>
         <p>Task Title</p>
+        <p>Name</p>
         <p>Due Date</p>
         <p>Status</p>
       </div>
@@ -33,7 +33,7 @@ const AdminDashboard = () => {
         </div> 
         : adminData && adminData.map((data, index) => {
           return ( 
-            <div key={index} className='sm:grid grid-cols-[0.5fr_1fr_1fr_1fr_1fr] grid-flow-col py-3 px-20 border-gray-700'>             
+            <div key={index} className='flex w-full justify-between gap-3 items-start md:grid grid-cols-[0.5fr_1fr_1fr_1fr_1fr] grid-flow-col py-4 px-4 md:px-20 border-gray-700 text-center border-b'>             
               <AdminTaskItem data={data} index={index}/>
             </div>
           )

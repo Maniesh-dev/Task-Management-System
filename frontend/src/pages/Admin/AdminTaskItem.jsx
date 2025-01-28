@@ -16,11 +16,14 @@ const AdminTaskItem = ({data, index}) => {
 
   return (
    <>
-     <div>{index + 1}</div>
-     <div>{data.userId && getUserName(data.userId)}</div>
-     <div>{data.title}</div>
-     <div>{formatDate(data.date)}</div>
-     <div className={data.status ? 'text-green-600' : 'text-red-600'}>{data.status ? 'Completed' : 'Pending'}</div>
+      <div>{index + 1}</div>
+      <div className=''>{data.title}</div>
+      <div className='hidden sm:block'>{data.userId && getUserName(data.userId)}</div>
+      <div className='text-center text-sm'>
+        <div className='sm:hidden'>{data.userId && getUserName(data.userId)}</div>
+        <div className='text-sm'>{formatDate(data.date)}</div>
+      </div>
+      <div className={data.status ? 'text-green-600' : 'text-red-600'}>{data.status ? 'Completed' : 'Pending'}</div>
    </>
   )
 }
